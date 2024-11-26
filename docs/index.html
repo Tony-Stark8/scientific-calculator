@@ -7,40 +7,60 @@
     <link rel="stylesheet" href="calculator_styles.css">
 </head>
 <body>
-<header>
-    <h1>Scientific Calculator</h1>
-</header>
-
 <main>
-    <div class="calculator">
-        <div class="display" id="display">0</div>
-        <div class="buttons">
+    <section class="calculator">
+        <section class="display" id="display">0</section>
+        <section class="buttons">
+            <!-- First Row -->
             <button class="btn" data-action="clear">AC</button>
             <button class="btn" data-action="delete">DEL</button>
-            <button class="btn" data-action="%">%</button>
+            <button class="btn" data-action="(">(</button>
+            <button class="btn" data-action=")">)</button>
+
+            <button class="btn" data-action="exp">exp</button>
+            <button class="btn" data-action="^">^</button>
+            <button class="btn" data-action="log">log</button>
+            <button class="btn" data-action="pi">π</button>
+
+            <!-- Second Row -->
+            <button class="btn" data-action="sin">sin</button>
+            <button class="btn" data-action="cos">cos</button>
+            <button class="btn" data-action="tan">tan</button>
             <button class="btn" data-action="/">&divide;</button>
 
+            <!-- Third Row -->
             <button class="btn">7</button>
             <button class="btn">8</button>
             <button class="btn">9</button>
             <button class="btn" data-action="*">&times;</button>
 
+            <!-- Fourth Row -->
             <button class="btn">4</button>
             <button class="btn">5</button>
             <button class="btn">6</button>
             <button class="btn" data-action="-">&minus;</button>
 
+            <!-- Fifth Row -->
             <button class="btn">1</button>
             <button class="btn">2</button>
             <button class="btn">3</button>
             <button class="btn" data-action="+">+</button>
 
+            <!-- Sixth Row -->
             <button class="btn">0</button>
             <button class="btn" data-action=".">.</button>
             <button class="btn" data-action="sqrt">&radic;</button>
             <button class="btn" data-action="=">=</button>
-        </div>
-    </div>
+
+            <!-- Seventh Row -->
+            <button class="btn" data-action="x10">x10</button>
+
+            <!-- Eighth Row -->
+            <!-- Changed button label to use the square root symbol (√) -->
+            <button class="btn" data-action="x_sqrt_y">x √ y</button>
+            <button class="btn" data-action="frac">frac</button>
+        </section>
+    </section>
 </main>
 
 <script src="calculator_script.js"></script>
